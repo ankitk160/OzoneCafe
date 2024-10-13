@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozone Cafe</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/scripts/style.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/scripts/account.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Starts -->
+    <nav>
+        <div class="navhead2">
+            <img src="assets/images/icontitle.png" alt="">
+        </div>
+        <div class="navhead1">
+            <img src="assets/images/logo.png" alt="">
+            <p><b>Ozone <span>Cafe</span></b></p>
+        </div>
+        <div id="langInput"><select name="language" id="languageSelect">
+                <option value="english">EN</option>
+                <option value="arabic">AR</option>
+                <option value="amharic">AMH</option>
+            </select></div>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Bottombar Starts -->
+    <div class="rectangle">
+        <div class="rec-frame">
+            <a href="index.html"><img src="assets/images/home.png" alt="" class="menu-icons"></a>
+            <a href="category.html"><img src="assets/images/category.png" alt="" class="menu-icons"></a>
+            <a href="profile.html"><img src="assets/images/profile.png" alt="" class="menu-icons"></a>
+            <button id="openMenu"><img src="assets/images/menu-active.png" alt="" class="menu-icons"></button>
+        </div>
+    </div>
+    <!-- Bottombar Ends -->
+
+    <!-- Main Content Starts -->
+    <div class="main-content">
+        <div class="tnc-banner"><span data-en="MY ACCOUNT" data-ar="حسابي" data-am="አካውንቲንግ ስም">MY ACCOUNT</span>
+            <img src="assets/images/account-banner.png" alt="">
+        </div>
+        <div class="tnc-text">
+            <div class="acc-col" style="border-bottom: 1px solid #FFFFFF;">
+                <div class="acc-row1" data-en="Mobile no." data-ar="رقم الجوال" data-am="ሞባይል ቁጥር">Mobile no.</div>
+                <div class="acc-row2">123 456 7890</div>
+            </div>
+            <div class="acc-col">
+                <div class="acc-row1" data-en="Status" data-ar="الحالة" data-am="ሁኔታ">status</div>
+                <div class="acc-row2" data-en="Active" data-ar="نشيط" data-am="አገልግሎት">Active</div>
+            </div>
+        </div>
+        <button id="openUnsub" data-en="Unsubscribe" data-ar="إلغاء الاشتراك" data-am="አትሌዎች">Unsubscribe</button>
+    </div>
+    <!-- Main Content Ends -->
+
+    <!-- Menu Modal Starts -->
+    <div class="menu-bg" id="customModal">
+        <div class="menu-content">
+            <div class="menu-body">
+                <img src="assets/images/line.png" alt="">
+                <a href="tnc.html">
+                    <div class="option"><img src="assets/images/tnc.png" alt=""><span data-en="Terms and conditions"
+                            data-ar="الشروط والأحكام" data-am="መንስኤዎች እና ማንቸስ">Terms and conditions</span></div>
+                </a>
+                <img src="assets/images/line.png" alt="">
+                <a href="faq.html">
+                    <div class="option"><img src="assets/images/faq.png" alt=""><span data-en="FAQ"
+                            data-ar="الأسئلة الشائعة" data-am="ጥያቄ">FAQ</span></div>
+                </a>
+                <img src="assets/images/line.png" alt="">
+                <a href="account.html">
+                    <div class="option"><img src="assets/images/user.png" alt=""><span data-en="My Account"
+                            data-ar="حسابي" data-am="የአካውንትዎ">My Account</span></div>
+                </a>
+                <img src="assets/images/line.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Menu Modal Ends -->
+
+    <!-- Unsubscription Alert Modal Starts -->
+    <div class="menu-bg" id="unsubModal">
+        <div class="unsub-content">
+            <img src="assets/images/alert.png" alt="">
+            <span data-en="You have been unsubscribed successfully" data-ar="لقد تم إلغاء الاشتراك بنجاح"
+                data-am="በተላይ ወደተደረሰበት አድርገው ነበር">You have been unsubscribe successfully</span>
+        </div>
+    </div>
+    <!-- Unsubscription Alert Modal Ends -->
+
+    <!-- Scripts links -->
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

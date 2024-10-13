@@ -1,0 +1,150 @@
+/* Styling for navbar */
+nav {
+    position: fixed;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 111.38%);
+    filter: drop-shadow(0px 0.93vw 5.74vw 0px #2B2F53);
+    backdrop-filter: blur(6.75px);
+    width: 100%;
+    height: 10.46vh;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    .navhead1 {
+        display: none;
+    }
+
+    .navhead2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 25.58vw;
+        position: absolute;
+        width: 90.23vw;
+        height: 5.15vh;
+        left: calc(50% - 90.23vw/2 + 0.06vw);
+        top: 2.9vh;
+
+        img {
+            width: 11.16vw;
+            height: 11.16vw;
+        }
+
+        .img-mid {
+            width: 16.74vw;
+            height: 9.1vw;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        height: 11.66vh;
+        box-shadow: 0px 9px 8.9px rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(0.47vw);
+
+        .navhead1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 1.532vh;
+            position: absolute;
+            width: 90.953vw;
+            height: 5.752vh;
+            left: calc(50% - 90.953vw/2 + 0.51px);
+            top: 3.77vh;
+
+            img {
+                content: url('logo-desktop.png');
+                width: 8.25vw;
+                height: 4.1vw;
+                filter: drop-shadow(0px 4px 4px #000000);
+            }
+
+            p {
+                font-family: "Jaldi", sans-serif;
+                font-size: 5.57vh;
+                line-height: 9.375vh;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.68);
+
+                span {
+                    font-weight: lighter;
+                }
+            }
+        }
+
+        .navhead2 {
+            display: none;
+        }
+    }
+}
+
+/* Styling for action games */
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1.29vh;
+    position: absolute;
+    width: 88.84vw;
+    height: 99.84vh;
+    left: 5.64vw;
+    top: 12.11vh;
+    font-weight: 600;
+    font-size: 1.72vh;
+    line-height: 2.56vh;
+
+    .action-games {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: flex-start;
+        padding: 0px 0.7vw;
+        gap: 2.56vh 2.56vw;
+        width: 88.84vw;
+        height: 85vh;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+        img {
+            box-sizing: border-box;
+            width: 27.05vw;
+            height: 27.05vw;
+            border-radius: 7.16vw;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .action {
+        gap: 1.95vh;
+        width: 86vw;
+        height: 81.56vh;
+        left: 10.56vw;
+        top: 14.12vh;
+        font-size: 3.125vh;
+        line-height: 4.6875vh;
+
+        .action-games {
+            padding: 0px 0.21vw;
+            gap: 2.34375vh 1.39vw;
+            width: 86vw;
+            height: 74.92vh;
+            overflow-x: scroll;
+            scrollbar-width: none;
+
+            img {
+                width: 15.85vw;
+                height: 15.85vw;
+                border-radius: 3.33vw;
+            }
+        }
+    }
+}

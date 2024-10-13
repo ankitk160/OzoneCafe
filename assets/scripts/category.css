@@ -1,0 +1,296 @@
+/* Styling for navbar */
+nav {
+    position: fixed;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 111.38%);
+    filter: drop-shadow(0px 0.93vw 5.74vw 0px #2B2F53);
+    backdrop-filter: blur(6.75px);
+    width: 100%;
+    height: 10.46vh;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    .navhead1 {
+        display: none;
+    }
+
+    .navhead2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 25.58vw;
+        position: absolute;
+        width: 90.23vw;
+        height: 5.15vh;
+        left: calc(50% - 90.23vw/2 + 0.06vw);
+        top: 2.9vh;
+
+        img {
+            width: 16.74vw;
+            height: 9.1vw;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        height: 11.66vh;
+        box-shadow: 0px 9px 8.9px rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(0.47vw);
+
+        .navhead1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 1.532vh;
+            position: absolute;
+            width: 90.953vw;
+            height: 5.752vh;
+            left: calc(50% - 90.953vw/2 + 0.51px);
+            top: 3.77vh;
+
+            img {
+                content: url('logo-desktop.png');
+                width: 8.25vw;
+                height: 4.1vw;
+                filter: drop-shadow(0px 4px 4px #000000);
+            }
+
+            p {
+                font-family: "Jaldi", sans-serif;
+                font-size: 5.57vh;
+                line-height: 9.375vh;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.68);
+
+                span {
+                    font-weight: lighter;
+                }
+            }
+        }
+
+        .navhead2 {
+            display: none;
+        }
+    }
+}
+
+/* Styling of Main Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1.72vh;
+    position: absolute;
+    width: 88.84vw;
+    height: 79.94vh;
+    left: calc(50% - 88.84vw/2);
+    top: 11.6vh;
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 1.29vh;
+        width: 88.84vw;
+        height: 10.3vh;
+        font-weight: 600;
+        font-size: 2.58vh;
+        line-height: 3.86vh;
+
+        .input-area {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 1.29vw;
+            width: 88.84vw;
+            height: 5.15vh;
+
+            .input-border {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0.97vh 36.98vw 0.97vh 3.72vw;
+                gap: 1.5vh;
+                width: 74.88vw;
+                height: 5.15vh;
+                border: 1px solid rgba(255, 255, 255, 0.8);
+                border-radius: 1.07vh;
+
+                img {
+                    width: 2.58vh;
+                    height: 2.58vh;
+                }
+
+                input {
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    width: 60vw;
+                    height: 3.21vh;
+                }
+
+                input::placeholder {
+                    font-weight: 400;
+                    opacity: 0.22;
+                }
+            }
+
+            .filter {
+                position: absolute;
+                right: 0;
+
+                img {
+                    height: 5.15vh;
+                    width: 5.15vh;
+                }
+            }
+        }
+    }
+
+    .select-category {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 1.29vh;
+        width: 88.84vw;
+        height: 67.28vh;
+        font-weight: 600;
+        font-size: 1.72vh;
+        line-height: 2.58vh;
+
+        .results {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-content: flex-start;
+            padding: 0px 5.72vw;
+            gap: 4.66vh;
+            width: 88.84vw;
+            height: 63.41vh;
+            overflow-y: scroll;
+            scrollbar-width: none;
+
+            a {
+                text-decoration: none;
+
+                .result-area {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0px;
+                    gap: 0.66vh;
+                    width: 24.88vw;
+                    height: 20.73vh;
+                    font-weight: 500;
+                    font-size: 2.65vh;
+                    line-height: 3.97vh;
+                    text-align: center;
+                    color: #FFF7F7;
+
+                    img {
+                        width: 16.09vh;
+                        height: 16.09vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        gap: 2.93vh;
+        width: 85.07vw;
+        height: 72.75vh;
+        right: 4.51vw;
+        top: 16.9vh;
+        left: 10.42vw;
+
+        .input {
+            gap: 1.17vh;
+            width: 85.07vw;
+            height: 14.06vh;
+            align-self: stretch;
+            font-size: 3.125vh;
+            line-height: 4.6875vh;
+
+            .input-area {
+                gap: 1.17vh;
+                align-self: stretch;
+                width: 85.07vw;
+                height: 8.2vh;
+
+                .input-border {
+                    padding: 1.76vh 11.04vw 1.76vh 2.92vh;
+                    gap: 2.34vh;
+                    width: 78.4vw;
+                    height: 8.2vh;
+                    border-radius: 0.98vh;
+
+                    img {
+                        width: 3.91vh;
+                        height: 3.91vh;
+                    }
+
+                    input {
+                        width: 70vw;
+                        height: 4.68vh;
+                    }
+
+                    input::placeholder {
+                        font-weight: 400;
+                        opacity: 0.22;
+                        font-size: 3.125vh;
+                        line-height: 4.6875vh;
+                    }
+                }
+
+                .filter img {
+                    height: 8.2vh;
+                    width: 8.2vh;
+                }
+            }
+        }
+
+        .select-category {
+            gap: 2.34vh;
+            align-self: stretch;
+            width: 85.07vw;
+            height: 64.75vh;
+            font-size: 3.125vh;
+            line-height: 4.69vh;
+
+            .results {
+                padding: 0px 1.11vw;
+                gap: 2.44vh 2.99vw;
+                align-self: stretch;
+                width: 85.07vw;
+                height: 57.72vh;
+
+                .result-area {
+                    gap: 0.73vh;
+                    width: 18.43vw;
+                    height: 22.8vh;
+                    font-size: 2.91vh;
+                    line-height: 4.4vh;
+
+                    img {
+                        width: 17.68vh;
+                        height: 17.68vh;
+                    }
+                }
+            }
+        }
+    }
+}

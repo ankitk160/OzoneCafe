@@ -1,0 +1,319 @@
+/* Styling for navbar */
+nav {
+    position: fixed;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 111.38%);
+    filter: drop-shadow(0px 0.93vw 5.74vw 0px #2B2F53);
+    backdrop-filter: blur(6.75px);
+    width: 100%;
+    height: 10.46vh;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    .navhead1 {
+        display: none;
+    }
+
+    .navhead2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 25.58vw;
+        position: absolute;
+        width: 90.23vw;
+        height: 5.15vh;
+        left: calc(50% - 90.23vw/2 + 0.06vw);
+        top: 2.9vh;
+
+        img {
+            width: 16.74vw;
+            height: 9.1vw;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        height: 11.66vh;
+        box-shadow: 0px 9px 8.9px rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(0.47vw);
+
+        .navhead1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 1.532vh;
+            position: absolute;
+            width: 90.953vw;
+            height: 5.752vh;
+            left: calc(50% - 90.953vw/2 + 0.51px);
+            top: 3.77vh;
+
+            img {
+                content: url('logo-desktop.png');
+                width: 8.25vw;
+                height: 4.1vw;
+                filter: drop-shadow(0px 4px 4px #000000);
+            }
+
+            p {
+                font-family: "Jaldi", sans-serif;
+                font-size: 5.57vh;
+                line-height: 9.375vh;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.68);
+
+                span {
+                    font-weight: lighter;
+                }
+            }
+        }
+
+        .navhead2 {
+            display: none;
+        }
+    }
+}
+
+/* Styling for tnc main content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 1.82vh;
+    position: absolute;
+    width: 96.74vw;
+    height: 76.93vh;
+    left: calc(50% - 96.74vw/2 - 0.06vw);
+    top: 14.16vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    .tnc-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 96.74vw;
+        height: 28.21vh;
+        font-weight: 600;
+        font-size: 2.56vh;
+        line-height: 3.86vh;
+
+        img {
+            width: 44.63vh;
+            height: 24.35vh;
+        }
+    }
+
+    .tnc-text {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        position: absolute;
+        width: 88.84vw;
+        height: 14.7vh;
+        left: 5.84vw;
+        top: 35.15vh;
+        border: 1px solid #FFFFFF;
+        border-radius: 2.33vw;
+        font-weight: 500;
+        font-size: 1.5vh;
+
+        .acc-col {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            width: 88.84vw;
+            height: 7.35vh;
+            align-self: stretch;
+
+            .acc-row1 {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                width: 30.23vw;
+                height: 7.35vh;
+                align-self: stretch;
+                border-right: 1px solid #FFFFFF;
+            }
+
+            .acc-row2 {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                width: 58.61vw;
+                height: 7.35vh;
+                align-self: stretch;
+            }
+        }
+    }
+
+    button {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1.93vh 6.98vw;
+        gap: 1.07vh;
+        position: absolute;
+        width: 37.21vw;
+        height: 5.04vh;
+        left: calc(50% - 37.21vw/2);
+        top: 53.42vh;
+        background: #6235C2;
+        box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.25);
+        border-radius: 6.05vw;
+        font-weight: 400;
+        font-size: 1.72vh;
+        line-height: 2.58vh;
+        background:
+            linear-gradient(#6235C2 0 0) padding-box,
+            linear-gradient(133.91deg, #FFFFFF 21.92%, rgba(255, 255, 255, 0) 74.53%) border-box;
+        border: 1px solid transparent;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main-content .tnc-banner {
+        height: 38.38vh;
+
+        img {
+            width: 58.59vh;
+            height: 31.96vh;
+        }
+    }
+
+    .main-content .tnc-text {
+        width: 44.93vw;
+        height: 22.66vh;
+        left: calc(50% - 44.93vw/2 + 0.04vw);
+        top: 40.3vh;
+        border-radius: 0.7vw;
+        border: 1.5px solid #FFFFFF;
+        font-size: 1.95vh;
+
+        .acc-col {
+            width: 44.93vw;
+            height: 11.33vh;
+
+            .acc-row1 {
+                width: 16.67vw;
+                height: 11.33vh;
+                border-right: 1.5px solid #FFFFFF;
+            }
+
+            .acc-row2 {
+                width: 28.26vw;
+                height: 11.33vh;
+            }
+        }
+    }
+
+    .main-content button {
+        padding: 2.93vh 3.33vw;
+        gap: 0.98vh;
+        width: 20.49vw;
+        height: 8.01vh;
+        left: calc(50% - 20.49vw/2 + 0.04vw);
+        top: 65.5vh;
+        border-radius: 3.82vw;
+        font-size: 3.125vh;
+        line-height: 4.6875vh;
+    }
+}
+
+/* Styling for unsubscription alert */
+.menu-bg {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .unsub-content {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8.58vh 8.84vw;
+        gap: 2.04vh;
+        position: relative;
+        width: 66.05vw;
+        height: 23.93vh;
+        top: calc(50% - 23.93vh/2);
+        left: calc(50% - 66.05vw/2);
+        background: #FFFFFF;
+        border: 0.7vw solid #6235C2;
+        border-radius: 4.65vw;
+
+        img {
+            width: 5.15vh;
+            height: 5.15vh;
+            top: 3.59vh;
+            right: 27.44vw;
+            left: 27.44vw;
+            bottom: 15.18vh;
+            position: absolute;
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 2.58vh;
+            line-height: 3.86vh;
+            text-align: center;
+            color: #0A0C26;
+            top: 10vh;
+            position: absolute;
+            width: 48.37vw;
+            height: 9.55vh;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu-bg .unsub-content {
+        width: 35vw;
+        height: 42vh;
+        top: calc(50% - 42vh/2);
+        left: calc(50% - 35vw/2);
+        border: 0.5vw solid #6235C2;
+        border-radius: 2vw;
+
+        img {
+            width: 11.48vh;
+            height: 11.48vh;
+            left: 13vw;
+            top: 5.59vh;
+        }
+
+        span {
+            font-size: 4vh;
+            line-height: 5.86vh;
+            top: 18vh;
+            width: 32.37vw;
+            height: 9.55vh;
+        }
+    }
+}
